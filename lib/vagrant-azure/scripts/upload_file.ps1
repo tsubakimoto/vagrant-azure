@@ -59,7 +59,7 @@ try {
       type = "PowerShellError"
       message = $response["error"]
     }
-    Write-Error-Message $errorResult
+    Write-Error-Message $errortHash
     return
   }
   $session = $response["session"]
